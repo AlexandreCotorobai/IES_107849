@@ -31,3 +31,32 @@ Aveiro ID: 1010500
 | git branch -D [branch name]	           | #Delete a branch forcefully|
 | git push origin --delete [branch name]   | #Delete a remote branch|
 | git checkout -b [branch name]	           | #Create a new branch and switch to it|
+
+# Lab1_3
+
+touch Dockerfile 
+
+docker build -t <directory_name> .
+
+docker run -dp 127.0.0.1:3000:3000 getting-started  ## OR SIMILAR
+
+docker ps
+docker stop <the-container-id>
+docker rm <the-container-id>
+
+docker rm -f <the-container-id> stops and removes at in one command
+
+### Share App
+docker tag getting-started YOUR-USER-NAME/getting-started
+docker push YOUR-USER-NAME/getting-started
+
+### Containers
+docker run -d ubuntu bash -c "shuf -i 1-10000 -n 1 -o /data.txt && tail -f /dev/null"
+docker exec <container-id> cat /data.txt
+docker run -it ubuntu ls /
+
+### Volumes
+docker volume create todo-db
+docker run -dp 127.0.0.1:3000:3000 --mount type=volume,src=todo-db,target=/etc/todos getting-started
+
+docker volume inspect todo-db

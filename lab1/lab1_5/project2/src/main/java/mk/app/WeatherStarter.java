@@ -1,13 +1,12 @@
-package com.mk.app;
+package mk.app;
 
 
 import retrofit2.Call;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
-import com.mk.app.IpmaCityForecast; //may need to adapt package name
-import com.mk.app.IpmaService;
+import mk.app.IpmaCityForecast; //may need to adapt package name
+import mk.app.IpmaService;
 
 /**
  * demonstrates the use of the IPMA API for weather forecast
@@ -53,7 +52,6 @@ public class WeatherStarter {
                         System.out.println("Wind direction: " + firstDay.getPredWindDir());
                         System.out.println("Class wind speed: " + firstDay.getClassWindSpeed());
                         System.out.println("Weather type: " + firstDay.getIdWeatherType());
-
                     } else {
                 System.out.println( "No results for this request!");
             }

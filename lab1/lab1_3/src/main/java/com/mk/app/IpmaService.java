@@ -1,4 +1,4 @@
-package mk.app;
+package com.mk.app;
 
 
 import retrofit2.Call;
@@ -13,6 +13,4 @@ public interface IpmaService {
     @GET("forecast/meteorology/cities/daily/{city_id}.json")
     Call<IpmaCityForecast> getForecastForACity(@Path("city_id") int cityId);
 
-    @GET("distrits-islands.json")
-    Call<IpmaDistrictsIslands> getDistrictsIslands();
 }

@@ -57,6 +57,7 @@ docker build -t <directory_name> .
 docker run -dp 127.0.0.1:3000:3000 getting-started  ## OR SIMILAR
 
 docker ps
+
 docker stop <the-container-id>
 
 docker rm <the-container-id>

@@ -32,7 +32,7 @@ Aveiro ID: 1010500
 | git push origin --delete [branch name]   | #Delete a remote branch|
 | git checkout -b [branch name]	           | #Create a new branch and switch to it|
 
-# Lab1_3
+# Lab1_4
 
 touch Dockerfile 
 
@@ -63,3 +63,10 @@ docker volume inspect todo-db
 
 ### Docker Compose
 docker compose up
+
+# Lab1_5
+
+mvn install
+mvn package
+docker image build -t docker-java-jar:latest
+docker run docker-java-jar:latest

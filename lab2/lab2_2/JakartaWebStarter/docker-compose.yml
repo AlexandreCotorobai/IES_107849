@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  tomcat:
+    image: tomcat:latest
+    ports:
+      - "8888:8080"
+    volumes:
+      - ./target:/usr/local/tomcat/webapps

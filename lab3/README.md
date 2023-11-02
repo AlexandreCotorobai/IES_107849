@@ -1,3 +1,10 @@
+# Important
+
+Every program was tested using VSCode (using F5 key to run) from `Lab3` folder.
+
+Exception for Lab3_3, which was tested using `docker compose up` on `lab3_3` folder.
+
+
 # Notes
 
 ## Lab3_1
@@ -30,3 +37,14 @@ The exact database and connection details are typically specified in the applica
 The validation rule for ensuring that the email address is not empty is defined in the "MyUser" entity class using the @NotBlank annotation.
 This annotation is part of the Bean Validation API (commonly known as JSR 380), and it indicates that the annotated field must not be empty.
 The error message associated with the @NotBlank annotation is defined in the message attribute of the annotation. If the "email" field is empty, the error message defined in the annotation will be displayed.
+
+
+## Lab3_2
+
+### Images
+
+![Img 1](./images/image1.png)
+![Img 2](./images/image2.png)
+![Img 3](./images/image3.png)
+![Img 4](./images/image4.png)
+![Img 5](./images/image5.png)
